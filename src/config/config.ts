@@ -1,3 +1,4 @@
+
 import { SupportedDatabaseTypes } from "../core/databaseConfig.js";
 import { config as dotenvConfig } from "dotenv";
 import { Config } from "../interface/config.js";
@@ -5,6 +6,7 @@ dotenvConfig();
 
 export default {
     token: process.env.Token,
+    questNotificationToken: process.env.QUEST_NOTIFICATION_TOKEN,
     embedColor: "#06c2fb",
     defaultLanguage: "en",
     debugMode: true,
@@ -14,6 +16,5 @@ export default {
     database: {
         type: SupportedDatabaseTypes.MongoDB,
         url: "mongodb+srv://Abdo_321_Abdo:Abdo123456@cluster0.i7lewj1.mongodb.net/badge2?retryWrites=true&w=majority",
-        
     },
 } as Config;
