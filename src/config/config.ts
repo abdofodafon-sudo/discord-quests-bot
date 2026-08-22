@@ -13,6 +13,7 @@ export default {
     developers: ["916173342342533142"],
     database: {
         type: SupportedDatabaseTypes.MongoDB,
-        url: "mongodb+srv://Abdo_321_Abdo:XMaQFy3dNRs7cHFl@cluster0.i7lewj1.mongodb.net/badge2?retryWrites=true&w=majority",
+        url: "mongodb+srv://Abdo_321_Abdo:Abdo123456@cluster0.i7lewj1.mongodb.net/badge2?retryWrites=true&w=majority",
+        
     },
 } as Config;
