@@ -2,16 +2,15 @@ import { CustomClient } from "../core/customClient.js";
 
 export default {
     notification: {
-        token: "--" ,// self accouont token (not bot)
-        channel: "1414963290391707779",
-        role: "1405572212403994684",
+        token: "--", // Self account token (متروك مؤقتاً)
+        channel: "1540726781114581012",
+        role: "",
         dm: {
-            enabled: true,
-            dmRoles: ["1405572212403994684"], // Roles to receive DMs
+            enabled: false, // معطل لتفادي الأخطاء بدون توكن الحساب
+            dmRoles: [],
         }
-
     },
-    bypassLimit: ["1423422187372544081"], // Bypass quest limits
+    bypassLimit: [],
     durationQuests: [
         "WATCH_VIDEO",
         "PLAY_ON_DESKTOP",
@@ -23,33 +22,27 @@ export default {
     ],
 
     image: {
-        channelId: "1421221274721456242", // channel where bot will upload images
-        guildId: "1399471603003428966", // server where bot will upload images
+        channelId: "1540726781114581012",
+        guildId: "1534741355157258270",
     },
-    serverId: "1399471603003428966", // Server where the bot operates
-    completedQuestsChannel: "1414963290391707779",
+    serverId: "1534741355157258270",
+    completedQuestsChannel: "1540726781114581012",
     voice: {
-        channel: "1421938834651742270", // Voice channel for quests
-        role: "1405572212403994684" // Role required for voice channel access
+        channel: "1534744151873159368",
+        role: ""
     },
-
 
     logStrings: [],
     childProcessCount: 1,
     questsPerChildProcess: 15,
-    useProxy: true,
-    proxyType: "http", // http, socks5, socks4
+    useProxy: false, // تم التعطيل ليعمل مباشرة بدون بروكسيات
+    proxyType: "http",
     buttons: [
         {
-            url: "https://youtu.be/eJoa4obHhng", // Tutorial or guide
-            emoji: (e:CustomClient) => e.getEmoji("youtube",false) ?? "▶️",
+            url: "https://discord.com",
+            emoji: (e: CustomClient) => e.getEmoji("youtube", false) ?? "▶️",
         }
     ],
-
-
-
-
-
 
     customRewardsImage: {
         "1298745361602449479": "https://i.ibb.co/rRNztwKq/reward.webp",
@@ -59,18 +52,8 @@ export default {
         "1287881739531976815": "orbIcon",
         "1298745361602449479": "nitro_level_stone"
     },
-    inviteUrl: "https://discord.gg/kZHHmhKE",
+    inviteUrl: "https://discord.gg/",
     joinMessage: `## انت مو داخل السيرفر
     - **عشان تستعمل البوت لازم تدخل السيرفر ب الحساب الي تبي تسوي فيه المهمة**
-    - **ملاحظة البوت مجاني 100%**
-    
-    ## You are not in the server
-    - **To use the bot, you need to join the server with the account you want to complete the task with.**
-    - **Note: The bot is 100% free.**
-    
-    - ** https://discord.gg/39c2c3jVbN **`
-}
-
-
-
-
+    - **ملاحظة البوت مجاني 100%**`
+};
