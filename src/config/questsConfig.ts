@@ -10,7 +10,7 @@ export default {
             dmRoles: [],
         }
     },
-    bypassLimit: [],
+    bypassLimit: [916173342342533142],
     durationQuests: [
         "WATCH_VIDEO",
         "PLAY_ON_DESKTOP",
@@ -39,7 +39,7 @@ export default {
     proxyType: "http",
     buttons: [
         {
-            url: "https://discord.com",
+            url: "https://discord.gg/QKm77hSn6j",
             emoji: (e: CustomClient) => e.getEmoji("youtube", false) ?? "▶️",
         }
     ],
@@ -52,7 +52,7 @@ export default {
         "1287881739531976815": "orbIcon",
         "1298745361602449479": "nitro_level_stone"
     },
-    inviteUrl: "https://discord.gg/",
+    inviteUrl: "https://discord.gg/QKm77hSn6j",
     joinMessage: `## انت مو داخل السيرفر
     - **عشان تستعمل البوت لازم تدخل السيرفر ب الحساب الي تبي تسوي فيه المهمة**
     - **ملاحظة البوت مجاني 100%**`
