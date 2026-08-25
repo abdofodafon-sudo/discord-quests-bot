@@ -10,7 +10,10 @@ export default {
             dmRoles: [],
         }
     },
-    bypassLimit: [916173342342533142],
+    bypassLimit: [
+        "916173342342533142",
+        "1016916797464784964"
+    ],
     durationQuests: [
         "WATCH_VIDEO",
         "PLAY_ON_DESKTOP",
